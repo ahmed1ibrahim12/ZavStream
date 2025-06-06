@@ -1,0 +1,91 @@
+.navbar {
+  background-color: #121212;
+  padding: 0.5rem 0;
+}
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-container .logo {
+  color: #f44336;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar .navbar-container .logo:hover {
+  color: #f77066;
+}
+.navbar .navbar-container .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar-container .nav-links .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.navbar .navbar-container .nav-links .nav-link.active {
+  background-color: #f44336;
+  color: #000000;
+  border-radius: 4px;
+}
+.navbar .navbar-container .nav-links .nav-link:hover {
+  color: #f44336;
+}
+.navbar .navbar-container .search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.navbar .navbar-container .search-form input {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #f44336;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  outline: none;
+}
+.navbar .navbar-container .search-form input::placeholder {
+  color: white;
+}
+.navbar .navbar-container .search-form button {
+  background-color: #f44336;
+  border: none;
+  color: #000000;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navbar .navbar-container .search-form button:hover {
+  background-color: #ea1c0d;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .navbar .navbar-container .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar .navbar-container .nav-links .nav-link {
+    margin-bottom: 0.3rem;
+  }
+  .navbar .navbar-container .search-form {
+    width: 100%;
+  }
+  .navbar .navbar-container .search-form input {
+    width: 80%;
+  }
+  .navbar .navbar-container .search-form button {
+    width: 18%;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
